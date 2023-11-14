@@ -3,10 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
-  debugShowCheckedModeBanner:
-  false;
 }
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,14 +15,14 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 70.0,
               backgroundColor: Colors.white,
               backgroundImage: AssetImage("assets/images/persona1.jpg"),
             ),
             //NetworkImage(
             //    "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
-            SizedBox(
+            const SizedBox(
               height: 12.0,
             ),
             Text(
@@ -34,10 +33,10 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 4.0,
             ),
-            Text(
+            const Text(
               "FLUTTER DEVELOPER",
               style: TextStyle(
                 color: Colors.white60,
@@ -46,7 +45,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
 
-            SizedBox(
+            const SizedBox(
               width: 180.0,
               child: Divider(
                 color: Colors.white60,
@@ -56,7 +55,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
 
-            Card(
+            const Card(
               color: Colors.white,
               margin: EdgeInsets.all(16.0),
               elevation: (4.0),
@@ -68,7 +67,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.indigo),
               ),
             ),
-            Card(
+            const Card(
               color: Colors.white,
               margin: EdgeInsets.all(16.0),
               elevation: (4.0),
@@ -80,14 +79,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.indigo),
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset('assets/images/facebook.png', height: 60.0),
-                SizedBox(width: 20.0),
+                const SizedBox(width: 20.0),
                 Image.asset('assets/images/twitter.png', height: 60.0),
-                SizedBox(width: 20.0),
+                const SizedBox(width: 20.0),
                 Image.asset('assets/images/instagram.png', height: 60.0),
               ],
             ),
